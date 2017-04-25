@@ -27,7 +27,7 @@ public interface SelectRepository<T, U, K> {
      * @param example 查询条件参数
      * @return 记录列表
      */
-    List<T> selectByExample(U example);
+    List<T> selectByExample(@Param("example") U example);
 
     /**
      * 根据条件查询一条数据
@@ -35,7 +35,7 @@ public interface SelectRepository<T, U, K> {
      * @param example 查询条件参数
      * @return 分页记录列表
      */
-    T selectOneByExample(U example);
+    T selectOneByExample(@Param("example") U example);
 
     /**
      * @param records
@@ -67,5 +67,5 @@ public interface SelectRepository<T, U, K> {
      * @param example 查询条件参数
      * @return 总记录数
      */
-    int countByExample(U example);
+    int countByExample(@Param("example") U example);
 }

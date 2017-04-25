@@ -2,6 +2,8 @@ package com.easytoolsoft.mybatis.data;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 /**
  * @param <T> Po
  * @param <U> Example
@@ -24,7 +26,7 @@ public interface DeleteRepository<T, U, K> {
      * @param example 查询Example条件参数
      * @return 影响的记录数
      */
-    int deleteByExample(U example);
+    int deleteByExample(@Param("example") U example);
 
     /**
      * @param records
