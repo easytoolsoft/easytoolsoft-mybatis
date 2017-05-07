@@ -83,10 +83,6 @@
         <name>easytoolsoft Inc.</name>
         <url>http://www.easytoolsoft.com/</url>
     </organization>
-    <ciManagement>
-        <system></system>
-        <url></url>
-    </ciManagement>
     <distributionManagement>
         <repository>
             <id>maven-releases</id>
