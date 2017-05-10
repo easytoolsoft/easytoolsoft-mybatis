@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <description>对mybatis的crud相关操作进行泛型化提取</description>
+    <url>http://www.easytoolsoft.com/</url>
     <properties>
         <project.github.group>https://github.com/easytoolsoft</project.github.group>
         <project.github.url>https://github.com/easytoolsoft/easytoolsoft-mybatis.git</project.github.url>
@@ -35,29 +36,6 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
     </dependencies>
-    <build>
-        <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>${java.encoding}</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
     <inceptionYear>2017</inceptionYear>
     <developers>
         <developer>
@@ -75,24 +53,12 @@
         </developer>
     </developers>
     <scm>
-        <connection>${project.github.url}</connection>
-        <developerConnection>${project.github.url}</developerConnection>
-        <url>${project.github.group}</url>
+        <connection>scm:git:${project.github.url}</connection>
+        <developerConnection>scm:git:${project.github.url}</developerConnection>
+        <url>${project.github.url}</url>
     </scm>
     <organization>
         <name>easytoolsoft Inc.</name>
         <url>http://www.easytoolsoft.com/</url>
     </organization>
-    <distributionManagement>
-        <repository>
-            <id>maven-releases</id>
-            <name>Nexus Release Repository</name>
-            <url>http://nexus.easytoolsoft-inc.com/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>maven-snapshots</id>
-            <name>Nexus Snapshot Repository</name>
-            <url>http://nexus.easytoolsoft-inc.com/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
 </project>
